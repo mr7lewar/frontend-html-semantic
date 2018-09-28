@@ -11,29 +11,29 @@
 <h1>
 Основы HTML
 </h1>
-<ol><li>
+<ol>
+    <li>
 <a href="#real_html">Что такое HTML на самом деле?</a>
-</li>
 <ul>
-<a href="#anatomy_element">Анатомия HTML элемента</a>
-</ul>
-<ul>
-<a href="#enclose_element">Вложенные элементы</a>
-</ul>
-<ul>
-<a href="#empty">Пустые элементы</a>
-</ul>
-<ul>
-<a href="#anatomy_doc">Анатомия HTML документа</a>
-</ul>
+    <li><a href="#anatomy_element">Анатомия HTML элемента</a></li>
+    <li><a href="#enclose_element">Вложенные элементы</a></li>
+    <li><a href="#empty">Пустые элементы</a></li>
+    <li>
+            <a href="#anatomy_doc">Анатомия HTML документа</a>
+        </li>
 
+</ul>
+</li>
 <li>
 <a href="#shot_description">Краткое описание элемента &lthtml&gt &lthtml&gt</a>
-</li>
+
 
 <ul>
-<a href="#atribute">Атрибуты</a>
+<li>
+    <a href="#atribute">Атрибуты</a>
+</li>
 </ul>
+</li>
 <li>
 <a href="#total">Заключение</a>
 </li>
@@ -60,7 +60,7 @@ HTML не является языком программирования; это
 My cat is very grumpy
 <p>Если мы хотим строку стоящую саму по себе, мы можем указать, что это параграф, заключая ее в тег
 параграфа (&lt p &gt) элементом:</p>
-<p>My cat is very grumpy</p>
+&ltp&gtMy cat is very grumpy&lt/p&gt
 <h3>
 <h3 id="anatomy_element">
     Анатомия HTML элемента
@@ -68,7 +68,7 @@ My cat is very grumpy
 </h3>
 Давайте рассмотрим &ltp&gt элемент параграфа более подробно.
 <p>
-    <img src="grumpy-cat-small.png">
+    <img src="grumpy-cat-small.png" alt="cat_0">
 </p>
 <ol>	<li><strong>Открывающий тег:</strong> Состоит из имени этого элемента (в данном случае, p), заключенного
 в открывающие и закрывающие угловые скобки. Указывает, где элемент начинается или начинает
@@ -85,7 +85,7 @@ My cat is very grumpy
 </li>
 </ol>
 Элементы также могут иметь атрибуты, которые выглядят так:
-<p>    <img src="grumpy-cat-attribute-small.png">
+<p>    <img src="grumpy-cat-attribute-small.png" alt="Cat">
 </p>
 <em>Атрибуты</em> содержат дополнительную информацию об элементе, которую вы не хотите показывать в фактическом
 контенте. В данном случае, атрибут класса позволяет дать элементу идентификационное имя, которое может
@@ -149,9 +149,11 @@ My cat is very grumpy
     <p><li>
     <strong>&ltmeta charset="utf-8"&gt</strong> — этот элемент устанавливает utf-8 кодировку вашего документа, которая включает в себя большинство символов из всех известных человечеству языков. По сути, теперь документ может обрабатывать любой текстовый контент, который вы в него вложите. Нет причин, чтобы не устанавливать её, так как это может помочь избежать некоторых проблем в дальнейшем.
     </li></p>
-    <p><li>
+    <p>
+    <li>
     <strong>&lttitle&gt&lt/title&gt</strong> — это устанавливает заголовок для вашей страницы, который является названием, появляющимся на вкладке браузера загружаемой страницы, и используется для описания страницы, когда вы добавляете ее в закладки/избранное.</ul>
-    </li></p>
+    </li>
+</p>
 
     <h2 id="shot_description">
     Краткое описание элемента &lthtml&gt&lt/html&gt
@@ -221,6 +223,7 @@ The end tag may be omitted if the &lthtml&gt element is not immediately followed
 </dd>
 </dl>
 <h2 id="total">
+
     Заключение
 </h2>
 Полные версии статей можно найти по ссылкам <a href="1.html" target="_blank">Основы HTML</a> и <a href="1.html" target="_blank">Элемент &lthtml&gt</a>
